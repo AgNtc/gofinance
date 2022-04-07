@@ -18,8 +18,9 @@ import {
 
 import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme';
-// import { Dashboard } from './src/screens/Dashboard';
+import { Dashboard } from './src/screens/Dashboard';
 import { Register } from './src/screens/Register';
+import { Category } from './src/screens/Category';
 
 export const App = () =>{
   const [fontsLoaded] = useFonts({
@@ -37,6 +38,7 @@ return (
     <StatusBar style="auto" /> 
     {/* <Dashboard /> */}
     <Register />
+    {/* <Category /> */}
   </ThemeProvider>
 );
 }
